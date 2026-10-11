@@ -79,7 +79,7 @@ Sentiment labels come from star ratings: 1–2 → negative, 3 → neutral, 4–
 
 ## Notes on reproducibility
 
-- Google Play returns the newest reviews, so re-scraping gives a different dataset. The filtered dataset used here is included in `data/`.
+- Google Play returns the newest reviews, so re-scraping gives a different dataset. The raw review data is not included in this repository, so a new run will differ slightly from the numbers reported here.
 - The sentiment model is used as-is, without fine-tuning, and evaluated on the full dataset against rating-based labels.
 - The default (baseline) BERTopic coherence is 0.4072 in this notebook run and 0.4076 in the paper. Small differences between runs are expected.
 - The baseline and tuned models use different topic representations (unigrams vs. bigram/trigram phrases split into words), so their coherence scores are an indicative comparison, not a strict one.
@@ -89,7 +89,6 @@ Sentiment labels come from star ratings: 1–2 → negative, 3 → neutral, 4–
 
 ```
 ├── notebooks/   analysis notebook (Google Colab)
-├── data/        filtered dataset (text, rating, date)
 ├── images/      result figures
 ├── requirements.txt
 └── README.md
@@ -100,8 +99,7 @@ Sentiment labels come from star ratings: 1–2 → negative, 3 → neutral, 4–
 1. Open the notebook in Google Colab (or Jupyter with a GPU for faster inference).
 2. Install dependencies: `pip install -r requirements.txt`
 3. Set `BASE_PATH` in the setup cell to a folder you can write to (the notebook uses Google Drive by default).
-4. To skip scraping, load `data/data_filter_vidio.csv` instead of running the data-collection cell.
-5. Run the cells in order. Sections: data collection → preprocessing → BERTopic → sentiment → integration → statistics → visualization.
+4. Run the cells in order. Sections: data collection → preprocessing → BERTopic → sentiment → integration → statistics → visualization.
 
 ## Tech stack
 
