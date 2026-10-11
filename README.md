@@ -70,6 +70,16 @@ Sentiment labels come from star ratings: 1–2 → negative, 3 → neutral, 4–
 - The satisfaction topic is the only one with a large share of positive reviews, often tied to sports content.
 - The Kruskal–Wallis test shows sentiment differs significantly across topics (p < 0.001).
 
+## Figures
+
+| Confusion matrix | Rating distribution |
+|---|---|
+| ![Confusion matrix](images/confusion_matrix_sentiment.png) | ![Rating distribution](images/rating_distribution_filtered.png) |
+
+| Positive reviews | Negative reviews |
+|---|---|
+| ![Positive word cloud](images/wordcloud_positive.png) | ![Negative word cloud](images/wordcloud_negative.png) |
+
 ## Limitations
 
 - **Class imbalance:** negative reviews dominate, and the model almost never recognizes the neutral class (F1 = 0.09). No resampling or class weighting was applied.
