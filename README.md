@@ -80,6 +80,10 @@ Sentiment labels come from star ratings: 1–2 → negative, 3 → neutral, 4–
 |---|---|
 | ![Positive word cloud](images/wordcloud_positive.png) | ![Negative word cloud](images/wordcloud_negative.png) |
 
+## Corrections to the published paper
+
+A few tables and figures in the published version contain labeling or counting errors. The corrections are listed in [ERRATA.md](ERRATA.md). The main findings are not affected.
+
 ## Limitations
 
 - **Class imbalance:** negative reviews dominate, and the model almost never recognizes the neutral class (F1 = 0.09). No resampling or class weighting was applied.
