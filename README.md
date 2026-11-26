@@ -7,7 +7,7 @@ DOI: [10.30871/jaic.v10i3.12952](https://doi.org/10.30871/jaic.v10i3.12952)
 
 ## Problem
 
-App reviews hold useful feedback, but they are numerous, informal, and full of abbreviations and code-mixing, so reading them manually does not scale. Sentiment analysis alone tells you *how* users feel but not *about what*. Topic modeling alone tells you *what* they discuss but not how they feel about it. This project links the two, so each discussion topic gets a sentiment profile that product teams can act on.
+App reviews contain valuable user feedback, but their large volume, informal language, abbreviations, and code-mixing make manual analysis difficult to scale. Sentiment analysis reveals **how users feel**, but not what they are talking about. Topic modeling identifies **what users discuss**, but not their sentiment. This project combines both approaches to provide a sentiment profile for each topic, helping product teams identify user concerns and make more informed decisions.
 
 ## Data
 
